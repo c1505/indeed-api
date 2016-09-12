@@ -14,6 +14,13 @@ RSpec.describe Indeed do
       response = indeed.fetch_one
       expect(response.code).to be 200
     end
+    
+    it "can fetch all results"
+    # each request returns 25.  
+    # build an array of all of the results
+    # verify that the count meets the number expected
+    
+    
   end
 end
 
