@@ -1,0 +1,2 @@
+class Indeed
+end
