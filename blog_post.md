@@ -15,6 +15,8 @@ I want to be able to add indeed posting data to a ruby application without havin
 ## Desired Outcome(I think)
 Pull down all posts given a search location and a search term.
 
+I want the full descriptions, but I only need the full descriptions for the jobs I am at least interested in and potentially just those that I have applied for or desire to.  
+
 ## Challenges
 
 ## Things Learned
