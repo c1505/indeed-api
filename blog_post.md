@@ -19,6 +19,18 @@ Pull down all posts given a search location and a search term.
 
 ## Things Learned
 
+## Odd Things
+First odd behavior of the API.  There is a start parameter.  You pass in the number of the result to start with and it returns one number after that except if you give a number that would have the last fetch have fewer than 25.  
+
+In that case it isn't all of the remaining posts, the posts end at the number you pass in for the start.... WHAHAHHAT?!
+
+fetch(10) yields "end" of 35
+fetch(210) yields "end" of 210
+
+
 
 ## Interesting or fun things
 I am enjoying TDD.  I haven't been in the practice of it.  Mostly writing tests after the fact if at all.  It does really make me think differently to write the tests first and I write different tests than I would otherwise.  I think I write better tests.
+
+### User Agent?
+I am not doing this for clicks so it might not matter for me.  Thought it was odd that the link I was using said firefox and still worked when I was in chrome.  Looks like I should change that and get that information from the "User-Agent" HTTP request header from the end user.  Not sure how to do that at the moment.  Could be interesting to look into.
