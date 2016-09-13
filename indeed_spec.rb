@@ -14,13 +14,26 @@ RSpec.describe Indeed do
       response = indeed.fetch_one
       expect(response.code).to be 200
     end
-    
-    it "can fetch all results"
-    # each request returns 25.  
-    # build an array of all of the results
-    # verify that the count meets the number expected
-    
-    
+
+    it "can fetch all results" do
+      zip_code = 27713
+      query = "Ruby"
+      indeed = Indeed.new(zip_code, query)
+      response = indeed.fetch_one
+      all = indeed.fetch_all
+      expect(response["totalResults"]).to be all.count * 25
+    end
+
+    it "the results are unique"
+
+    it "gets the full description"
+
+    it "gets the company name"
+
+    it "gets the location"
+
+    it "gets the link"
+
+
   end
 end
-
